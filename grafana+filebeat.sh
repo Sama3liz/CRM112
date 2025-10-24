@@ -12,7 +12,7 @@ KIBANA_PORT="5601"
 ELASTIC_USERNAME="elastic"  # Optional: if security enabled
 ELASTIC_PASSWORD="nC*et_nOP2yaUsCPFwpG" # Optional: if security enabled
 
-USE_SECURITY=false          # Set to true if xpack.security.enabled is enabled
+USE_SECURITY=true          # Set to true if xpack.security.enabled is enabled
 
 # === Update System ===
 sudo apt update && sudo apt upgrade -y
