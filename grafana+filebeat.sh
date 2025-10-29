@@ -6,11 +6,11 @@
 # -------------------------
 
 # === CONFIGURATION ===
-ELASTIC_IP="34.227.61.153"   # â† Replace with your Elasticsearch EC2 IP
+ELASTIC_IP="13.218.244.29"   # â† Replace with your Elasticsearch EC2 IP
 ELASTIC_PORT="9200"
 KIBANA_PORT="5601"
 ELASTIC_USERNAME="elastic"  # Optional: if security enabled
-ELASTIC_PASSWORD="nC*et_nOP2yaUsCPFwpG" # Optional: if security enabled
+ELASTIC_PASSWORD="ybOx=2MGsZFuiha3OuXq" # Optional: if security enabled
 
 USE_SECURITY=true          # Set to true if xpack.security.enabled is enabled
 
