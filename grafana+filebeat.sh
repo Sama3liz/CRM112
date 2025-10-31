@@ -56,10 +56,10 @@ filebeat.config.modules:
   reload.enabled: false
 
 setup.kibana:
-  host: "http://${ELASTIC_IP}:${KIBANA_PORT}"
+  host: "https://${ELASTIC_IP}:${KIBANA_PORT}"
 
 output.elasticsearch:
-  hosts: ["http://${ELASTIC_IP}:${ELASTIC_PORT}"]
+  hosts: ["https://${ELASTIC_IP}:${ELASTIC_PORT}"]
 EOF
 
 if [ "$USE_SECURITY" = true ]; then
