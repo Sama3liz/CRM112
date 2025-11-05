@@ -6,11 +6,11 @@
 # -------------------------
 
 # === CONFIGURATION ===
-ELASTIC_IP="184.72.132.178"   # â† Replace with your Elasticsearch EC2 IP
+ELASTIC_IP="54.198.40.17"   # â† Replace with your Elasticsearch EC2 IP
 ELASTIC_PORT="9200"
 KIBANA_PORT="5601"
 ELASTIC_USERNAME="elastic"  # Optional: if security enabled
-ELASTIC_PASSWORD="DS-it-U1_k27w=FjttAk" # Optional: if security enabled
+ELASTIC_PASSWORD="RbR_Zy63qZCWbGLSsmdz" # Optional: if security enabled
 
 USE_SECURITY=true          # Set to true if xpack.security.enabled is enabled
 
@@ -56,10 +56,10 @@ filebeat.config.modules:
   reload.enabled: false
 
 setup.kibana:
-  host: "https://${ELASTIC_IP}:${KIBANA_PORT}"
+  host: "http://${ELASTIC_IP}:${KIBANA_PORT}"
 
 output.elasticsearch:
-  hosts: ["https://${ELASTIC_IP}:${ELASTIC_PORT}"]
+  hosts: ["http://${ELASTIC_IP}:${ELASTIC_PORT}"]
 EOF
 
 if [ "$USE_SECURITY" = true ]; then
